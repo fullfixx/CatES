@@ -1,0 +1,322 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<title>E-SCOOTERS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+var active_id;
+
+function hide_all() {
+		$('.item').hide();
+		$('.scheme').hide();
+		$('.node').hide();
+		$('.hint').hide();
+	}
+function select_item(item) {
+	hide_all();
+
+	active_id = item.id;
+	$('.hint').show();
+	$('.item.' + item.id).show();
+	$('.node.' + item.id).show();
+}
+function select_schema(item) {
+	hide_all();
+
+	$('.hint').show();	
+	$('.scheme.' + active_id + '.' + $(item).attr('type')).show();
+	$('.node.' + active_id).show();
+}
+function init()
+{
+	$('img.map').maphilight();
+}
+$(document).ready(init);
+</script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/cat.css">
+</head>
+
+
+<body> 
+<div class="basement">
+
+	<!-- БЛОК №1 -->
+	<div class="block_1">
+			<div class="title"><br>СПИСОК МОДЕЛЕЙ<br> <span id="title">ЭЛЕКТРОСАМОКАТОВ</span></div>
+			<div class="menu_main">
+				<div class="menu_1">
+					<div class="cell_left" id="etwow_bgt" onClick="select_item(this)">E-Twow Booster GT</div>
+					<div class="cell_left" id="xi_m365" onClick="select_item(this)">Xiaomi M365</div>
+
+				</div>
+				<div class="menu_2">
+					<div class="cell_left" id="" onClick="select_item(this)">&nbsp;</div>
+					<div class="cell_left" id="" onClick="select_item(this)">&nbsp;</div>
+					<div class="cell_left" id="" onClick="select_item(this)">&nbsp;</div>
+				</div>
+			</div>
+	</div>
+	
+	<!-- БЛОК №2 НАЧАЛО -->
+	<div class="block_2">
+	
+		<!-- etwow_bgt begin -->
+		<div class="item etwow_bgt" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt.jpg" usemap="#etwow_bgt" name="show"> 
+			<map name="etwow_bgt">
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec00" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_assy.jpg" usemap="#etwow_bgt_assy" name="show"> 
+			<map name="etwow_bgt_assy">
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec01" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_cc.jpg" usemap="#etwow_bgt_cc" name="show"> 
+			<map name="etwow_bgt_cc"> 
+			<area shape="circle" target="_self" coords="468,141,11" href="http://partsgowheel.ru/?s=SSX2HX16&post_type=product&type_aws=true" alt="1" title="Саморез">
+			<area shape="circle" target="_self" coords="468,159,11" href="http://partsgowheel.ru/?s=22002TB000&post_type=product&type_aws=true" alt="2" title="Крышка дисплея защитная"> 
+			<area shape="circle" target="_self" coords="468,177,11" href="http://partsgowheel.ru/?s=22003TB000&post_type=product&type_aws=true" alt="3" title="Защита кнопок дисплея"> 
+			<area shape="circle" target="_self" coords="468,195,11" href="http://partsgowheel.ru/?s=SSX2HX8&post_type=product&type_aws=true" alt="4" title="Саморез">
+			<area shape="circle" target="_self" coords="468,265,11" href="http://partsgowheel.ru/?s=22004TB000&post_type=product&type_aws=true" alt="5" title="Стекло дисплея">
+			<area shape="circle" target="_self" coords="468,284,11" href="http://partsgowheel.ru/?s=SSX2HX10&post_type=product&type_aws=true" alt="6" title="Саморез">
+			<area shape="circle" target="_self" coords="468,301,11" href="http://partsgowheel.ru/?s=22001TB000&post_type=product&type_aws=true" alt="7" title="Плата консоли электронная">
+			<!-- <area shape="circle" target="_self" coords="468,319,11" href="http://partsgowheel.ru/?s=0000000000&post_type=product&type_aws=true" alt="8" title="Винт"> -->
+			<area shape="circle" target="_self" coords="147,325,11" href="http://partsgowheel.ru/?s=22005TB000&post_type=product&type_aws=true" alt="9" title="Курок газа">
+			<area shape="circle" target="_self" coords="145,344,11" href="http://partsgowheel.ru/?s=22006TB000&post_type=product&type_aws=true" alt="10" title="Стекло фары">
+			<area shape="circle" target="_self" coords="472,373,11" href="http://partsgowheel.ru/?s=22007TB000&post_type=product&type_aws=true" alt="11" title="Курок тормоза">
+			<area shape="circle" target="_self" coords="472,446,11" href="http://partsgowheel.ru/?s=SSX3X16&post_type=product&type_aws=true" alt="12" title="Саморез">
+
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec02" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_fh.jpg" usemap="#etwow_bgt_fh" name="show"> 
+			<map name="etwow_bgt_fh"> 
+			<area shape="circle" target="_self" coords="223,317,11" href="http://partsgowheel.ru/?s=41111TB000&post_type=product&type_aws=true" alt="1" title="Сердечник рулевых ручек концевой"> 
+			<!-- <area shape="circle" target="_self" coords="223,333,11" href="http://partsgowheel.ru/?s=0000000000&post_type=product&type_aws=true" alt="2" title="">  -->
+			<area shape="circle" target="_self" coords="223,349,11" href="http://partsgowheel.ru/?s=41112TB000&post_type=product&type_aws=true" alt="3" title="Сердечник рулевых ручек центральный"> 
+			<area shape="circle" target="_self" coords="223,366,11" href="http://partsgowheel.ru/?s=VX4X12&post_type=product&type_aws=true" alt="4" title="Заклепка"> 
+			<area shape="circle" target="_self" coords="224,382,11" href="http://partsgowheel.ru/?s=41113TB000&post_type=product&type_aws=true" alt="5" title="Труба рулевая Т-образная"> 
+			<area shape="circle" target="_self" coords="224,398,11" href="http://partsgowheel.ru/?s=41114TB000&post_type=product&type_aws=true" alt="6" title="Кнопка регулировки высоты руля"> 
+			<area shape="circle" target="_self" coords="224,414,11" href="http://partsgowheel.ru/?s=41115TB000&post_type=product&type_aws=true" alt="7" title="Кольцо пластиковое Т-образной рулевой трубы">
+			<area shape="circle" target="_self" coords="224,430,11" href="http://partsgowheel.ru/?s=41116TB000&post_type=product&type_aws=true" alt="8" title="Пружина кнопки регулировки высоты руля"> 
+			<area shape="circle" target="_self" coords="495,315,11" href="http://partsgowheel.ru/?s=41117TB000&post_type=product&type_aws=true" alt="9" title="Рукояти резиновые"> 
+			<area shape="circle" target="_self" coords="499,331,11" href="http://partsgowheel.ru/?s=41118TB000&post_type=product&type_aws=true" alt="10" title="Труба рулевая концевая часть"> 
+			<area shape="circle" target="_self" coords="499,347,11" href="http://partsgowheel.ru/?s=41119TB000&post_type=product&type_aws=true" alt="11" title="Пружина кнопки складывания руля"> 
+			<area shape="circle" target="_self" coords="499,363,11" href="http://partsgowheel.ru/?s=41120TB000&post_type=product&type_aws=true" alt="12" title="Кнопка складывания руля"> 
+			<area shape="circle" target="_self" coords="499,379,11" href="http://partsgowheel.ru/?s=41121TB000&post_type=product&type_aws=true" alt="13" title="Пружина стяжная штанги рулевой"> 
+			<area shape="circle" target="_self" coords="573,213,11" href="http://partsgowheel.ru/?s=DIN7985X3X10&post_type=product&type_aws=true" alt="14" title="Винт"> 
+
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec03" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_mt.jpg" usemap="#etwow_bgt_mt" name="show"> 
+			<map name="etwow_bgt_mt"> 
+			<area shape="circle" target="_self" coords="163,443,11" href="http://partsgowheel.ru/?s=41103TB000&post_type=product&type_aws=true" alt="1" title="Труба рулевая основная"> 
+			<area shape="circle" target="_self" coords="163,461,11" href="http://partsgowheel.ru/?s=41104TB000&post_type=product&type_aws=true" alt="2" title="Хомут рулевой трубы нижний"> 
+			<area shape="circle" target="_self" coords="163,480,11" href="http://partsgowheel.ru/?s=ISO7280X6X20&post_type=product&type_aws=true" alt="3" title="Винт"> 
+			<area shape="circle" target="_self" coords="478,264,11" href="http://partsgowheel.ru/?s=41105TB000&post_type=product&type_aws=true" alt="4" title="Хомут рулевой трубы верхний"> 
+			<area shape="circle" target="_self" coords="478,246,11" href="http://partsgowheel.ru/?s=RR6X55&post_type=product&type_aws=true" alt="5" title="Шпилька резьбовая"> 
+			<area shape="circle" target="_self" coords="478,227,11" href="http://partsgowheel.ru/?s=41106TB000&post_type=product&type_aws=true" alt="6" title="Гайка хомута верхнего специальная дальняя"> 
+			<area shape="circle" target="_self" coords="162,166,11" href="http://partsgowheel.ru/?s=41102TB000&post_type=product&type_aws=true" alt="7" title="Труба рулевая пластиковая"> 
+			<area shape="circle" target="_self" coords="162,185,11" href="http://partsgowheel.ru/?s=ISO7280X5X14&post_type=product&type_aws=true" alt="8" title="Винт"> 
+			<area shape="circle" target="_self" coords="162,203,11" href="http://partsgowheel.ru/?s=41107TB000&post_type=product&type_aws=true" alt="9" title="Крюк"> 
+			<area shape="circle" target="_self" coords="160,318,11" href="http://partsgowheel.ru/?s=41108TB000&post_type=product&type_aws=true" alt="10" title="Рычаг запорный"> 
+			<area shape="circle" target="_self" coords="160,337,11" href="http://partsgowheel.ru/?s=41109TB000&post_type=product&type_aws=true" alt="11" title="Гайка хомута верхнего специальная зажимная">
+			<area shape="circle" target="_self" coords="160,355,11" href="http://partsgowheel.ru/?s=41110TB000&post_type=product&type_aws=true" alt="12" title="Проставка запорного рычага пластиковая"> 
+
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec04" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_str.jpg" usemap="#etwow_bgt_str" name="show"> 
+			<map name="etwow_bgt_str"> 
+			<area shape="circle" target="_self" coords="86,172,11" href="http://partsgowheel.ru/?s=41201TB000&post_type=product&type_aws=true" alt="1" title="Гайка замковая рулевого механизма">
+			<area shape="circle" target="_self" coords="86,190,11" href="http://partsgowheel.ru/?s=41202TB000&post_type=product&type_aws=true" alt="2" title="Шайба специальная рулевого механизма">
+			<area shape="circle" target="_self" coords="86,208,11" href="http://partsgowheel.ru/?s=41203TB000&post_type=product&type_aws=true" alt="3" title="Кюветта резьбовая">
+			<area shape="circle" target="_self" coords="86,225,11" href="http://partsgowheel.ru/?s=41204TB000&post_type=product&type_aws=true" alt="4" title="Подшипник опорный">
+			<area shape="circle" target="_self" coords="86,242,11" href="http://partsgowheel.ru/?s=41205TB000&post_type=product&type_aws=true" alt="5" title="Кюветта прижимная">
+			<area shape="circle" target="_self" coords="86,259,11" href="http://partsgowheel.ru/?s=41206TB000&post_type=product&type_aws=true" alt="6" title="Труба рулевая внешняя">
+			<area shape="circle" target="_self" coords="273,355,11" href="http://partsgowheel.ru/?s=NX6&post_type=product&type_aws=true" alt="7" title="Гайка">
+			<area shape="circle" target="_self" coords="273,372,11" href="http://partsgowheel.ru/?s=41207TB000&post_type=product&type_aws=true" alt="8" title="Шайба пластиковая рулевого механизма">
+			<area shape="circle" target="_self" coords="273,389,11" href="http://partsgowheel.ru/?s=41208TB000&post_type=product&type_aws=true" alt="9" title="Труба рулевая резьбовая внутренняя">
+			<area shape="circle" target="_self" coords="418,507,11" href="http://partsgowheel.ru/?s=41209TB000&post_type=product&type_aws=true" alt="10" title="Кюветта нижняя">
+			<area shape="circle" target="_self" coords="418,524,11" href="http://partsgowheel.ru/?s=41210TB000&post_type=product&type_aws=true" alt="11" title="Муфта шестигранная">
+			<area shape="circle" target="_self" coords="418,541,11" href="http://partsgowheel.ru/?s=41211TB000&post_type=product&type_aws=true" alt="12" title="Гайка алюминевая рулевого механизма">
+
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec05" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_ff.jpg" usemap="#etwow_bgt_ff" name="show"> 
+			<map name="etwow_bgt_ff"> 
+			<area shape="circle" target="_self" coords="528,211,11" href="http://partsgowheel.ru/?s=52203TB000&post_type=product&type_aws=true" alt="1" title="Опора амортизатора переднего">
+			<area shape="circle" target="_self" coords="528,234,11" href="http://partsgowheel.ru/?s=52204TB000&post_type=product&type_aws=true" alt="2" title="Пружина амортизатора переднего">
+			<area shape="circle" target="_self" coords="528,257,11" href="http://partsgowheel.ru/?s=52205TB000&post_type=product&type_aws=true" alt="3" title="Труба шестигранная">
+			<area shape="circle" target="_self" coords="528,278,11" href="http://partsgowheel.ru/?s=ISO7380X6X20&post_type=product&type_aws=true" alt="4" title="Винт">
+			<area shape="circle" target="_self" coords="528,394,11" href="http://partsgowheel.ru/?s=52207TB000&post_type=product&type_aws=true" alt="5" title="Шайба резиновая">
+			<area shape="circle" target="_self" coords="528,416,11" href="http://partsgowheel.ru/?s=52202TB000&post_type=product&type_aws=true" alt="6" title="Вилка колеса переднего">
+			<area shape="circle" target="_self" coords="528,440,11" href="http://partsgowheel.ru/?s=52206TB000&post_type=product&type_aws=true" alt="7" title="Крышка защитная моторного кабеля">
+			<area shape="circle" target="_self" coords="528,461,11" href="http://partsgowheel.ru/?s=ISO7380X3X8&post_type=product&type_aws=true" alt="8" title="Винт">
+			<area shape="circle" target="_self" coords="344,208,11" href="http://partsgowheel.ru/?s=ISO7380X4X16&post_type=product&type_aws=true" alt="9" title="Винт">
+			<area shape="circle" target="_self" coords="222,328,11" href="http://partsgowheel.ru/?s=ISO7380X6X100&post_type=product&type_aws=true" alt="10" title="Винт">
+			<area shape="circle" target="_self" coords="137,452,11" href="http://partsgowheel.ru/?s=60002TB000&post_type=product&type_aws=true" alt="11" title="Крыло переднее">
+			<area shape="circle" target="_self" coords="137,467,11" href="http://partsgowheel.ru/?s=NX6&post_type=product&type_aws=true" alt="12" title="Гайка">
+			<area shape="circle" target="_self" coords="137,480,11" href="http://partsgowheel.ru/?s=NX4&post_type=product&type_aws=true" alt="13" title="Гайка">
+			
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec06" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_fw.jpg" usemap="#etwow_bgt_fw" name="show"> 
+			<map name="etwow_bgt_fw"> 
+			<area shape="circle" target="_self" coords="334,381,11" href="http://partsgowheel.ru/?s=21101TB000&post_type=product&type_aws=true" alt="1" title="Статор">
+			<area shape="circle" target="_self" coords="334,397,11" href="http://partsgowheel.ru/?s=21102TB000&post_type=product&type_aws=true" alt="2" title="Опора статора">
+			<area shape="circle" target="_self" coords="334,414,11" href="http://partsgowheel.ru/?s=21103TB000&post_type=product&type_aws=true" alt="3" title="Вал мотора">
+			<area shape="circle" target="_self" coords="334,430,11" href="http://partsgowheel.ru/?s=21104TB000&post_type=product&type_aws=true" alt="4" title="Ротор">
+			<area shape="circle" target="_self" coords="334,446,11" href="http://partsgowheel.ru/?s=53002TB000&post_type=product&type_aws=true" alt="5" title="Шина колеса">
+			<area shape="circle" target="_self" coords="499,394,11" href="http://partsgowheel.ru/?s=21105TB000&post_type=product&type_aws=true" alt="6" title="Подшипник вала мотора">
+			<area shape="circle" target="_self" coords="499,411,11" href="http://partsgowheel.ru/?s=21106TB000&post_type=product&type_aws=true" alt="7" title="Кольцо стопорное вала мотора">
+			<area shape="circle" target="_self" coords="596,362,11" href="http://partsgowheel.ru/?s=21108TB000&post_type=product&type_aws=true" alt="8" title="Гайка колеса центральная">
+			<area shape="circle" target="_self" coords="596,379,11" href="http://partsgowheel.ru/?s=21107TB000&post_type=product&type_aws=true" alt="9" title="Шайба специальная крышки мотора">
+			<area shape="circle" target="_self" coords="600,394,11" href="http://partsgowheel.ru/?s=21109TB000&post_type=product&type_aws=true" alt="10" title="Крышка мотора">
+			<area shape="circle" target="_self" coords="600,411,11" href="http://partsgowheel.ru/?s=DIN7985X4X12&post_type=product&type_aws=true" alt="11" title="Винт">
+			
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec07" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_ebu.jpg" usemap="#etwow_bgt_ebu" name="show"> 
+			<map name="etwow_bgt_ebu"> 
+			<area shape="circle" target="_self" coords="428,135,11" href="http://partsgowheel.ru/?s=DIN7985X4X8&post_type=product&type_aws=true" alt="1" title="Винт">
+			<area shape="circle" target="_self" coords="429,157,11" href="http://partsgowheel.ru/?s=82001TB000&post_type=product&type_aws=true" alt="2" title="Электронный блок управления">
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec08" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_fs.jpg" usemap="#etwow_bgt_fs" name="show"> 
+			<map name="etwow_bgt_fs"> 
+			<area shape="circle" target="_self" coords="33,319,11" href="http://partsgowheel.ru/?s=51210TB000&post_type=product&type_aws=true" alt="1" title="Винт-втулка с внутренней резьбой M6X39">
+			<area shape="circle" target="_self" coords="33,336,11" href="http://partsgowheel.ru/?s=51201TB000&post_type=product&type_aws=true" alt="2" title="Крышка механизма складывания левая">
+			<area shape="circle" target="_self" coords="33,353,11" href="http://partsgowheel.ru/?s=ISO7380X4X10&post_type=product&type_aws=true" alt="3" title="Винт">
+			<area shape="circle" target="_self" coords="33,370,11" href="http://partsgowheel.ru/?s=ISO7380X6X16&post_type=product&type_aws=true" alt="4" title="Винт">
+			<area shape="circle" target="_self" coords="343,383,11" href="http://partsgowheel.ru/?s=51203TB000&post_type=product&type_aws=true" alt="5" title="Вал рычага складывания">
+			<area shape="circle" target="_self" coords="343,398,11" href="http://partsgowheel.ru/?s=51204TB000&post_type=product&type_aws=true" alt="6" title="Болт запорный">
+			<area shape="circle" target="_self" coords="343,414,11" href="http://partsgowheel.ru/?s=51206TB000&post_type=product&type_aws=true" alt="7" title="Рычаг складывания">
+			<area shape="circle" target="_self" coords="349,552,11" href="http://partsgowheel.ru/?s=51207TB000&post_type=product&type_aws=true" alt="8" title="Пружина механизма складывания">
+			<area shape="circle" target="_self" coords="349,566,11" href="http://partsgowheel.ru/?s=51208TB000&post_type=product&type_aws=true" alt="9" title="Вал соеднительный механизма складывания">
+			<area shape="circle" target="_self" coords="353,582,11" href="http://partsgowheel.ru/?s=51209TB000&post_type=product&type_aws=true" alt="10" title="Втулка соеднительного вала">
+			<area shape="circle" target="_self" coords="590,255,11" href="http://partsgowheel.ru/?s=DIN912X6X16&post_type=product&type_aws=true" alt="11" title="Винт">
+			<area shape="circle" target="_self" coords="590,271,11" href="http://partsgowheel.ru/?s=51202TB000&post_type=product&type_aws=true" alt="12" title="Крышка механизма складывания правая">
+			
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec09" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_ch.jpg" usemap="#etwow_bgt_ch" name="show"> 
+			<map name="etwow_bgt_ch"> 
+			<area shape="circle" target="_self" coords="440,418,11" href="http://partsgowheel.ru/?s=51101TB000&post_type=product&type_aws=true" alt="1" title="Рама опорная">
+			<area shape="circle" target="_self" coords="440,402,11" href="http://partsgowheel.ru/?s=DIN7985X3X10&post_type=product&type_aws=true" alt="2" title="Винт">
+			<area shape="circle" target="_self" coords="440,386,11" href="http://partsgowheel.ru/?s=51102TB000&post_type=product&type_aws=true" alt="3" title="Втулка опорная рамы">
+			<area shape="circle" target="_self" coords="22,415,11" href="http://partsgowheel.ru/?s=51103TB000&post_type=product&type_aws=true" alt="4" title="Крышка защиты АКБ передняя">
+			<area shape="circle" target="_self" coords="22,430,11" href="http://partsgowheel.ru/?s=DIN7985X6X16&post_type=product&type_aws=true" alt="5" title="Винт">
+			<area shape="circle" target="_self" coords="215,213,11" href="http://partsgowheel.ru/?s=51105TB000&post_type=product&type_aws=true" alt="6" title="Втулка опорная рамы нейлоновая">
+			<area shape="circle" target="_self" coords="213,229,11" href="http://partsgowheel.ru/?s=51107TB000&post_type=product&type_aws=true" alt="7" title="Серьга передняя правая">
+			<area shape="circle" target="_self" coords="213,245,11" href="http://partsgowheel.ru/?s=51106TB000&post_type=product&type_aws=true" alt="8" title="Серьга передняя левая">
+			<area shape="circle" target="_self" coords="491,250,11" href="http://partsgowheel.ru/?s=DIN912X6X16&post_type=product&type_aws=true" alt="9" title="Винт">
+			<area shape="circle" target="_self" coords="20,293,11" href="http://partsgowheel.ru/?s=51110TB000&post_type=product&type_aws=true" alt="10" title="Винт-втулка с внутренней резьбой M6x54">
+			<area shape="circle" target="_self" coords="20,310,11" href="http://partsgowheel.ru/?s=NX6&post_type=product&type_aws=true" alt="11" title="Гайка">
+			<area shape="circle" target="_self" coords="20,326,11" href="http://partsgowheel.ru/?s=DIN7985X6X8&post_type=product&type_aws=true" alt="12" title="Винт">
+			<area shape="circle" target="_self" coords="495,265,11" href="http://partsgowheel.ru/?s=51109TB000&post_type=product&type_aws=true" alt="13" title="Серьга задняя правая">
+			<area shape="circle" target="_self" coords="608,371,11" href="http://partsgowheel.ru/?s=51108TB000&post_type=product&type_aws=true" alt="14" title="Серьга задняя левая">
+			<area shape="circle" target="_self" coords="608,388,11" href="http://partsgowheel.ru/?s=51104TB000&post_type=product&type_aws=true" alt="15" title="Крышка защиты АКБ задняя">
+			
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec10" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_rs.jpg" usemap="#etwow_bgt_rs" name="show"> 
+			<map name="etwow_bgt_rs"> 
+			<area shape="circle" target="_self" coords="490,271,8" href="http://partsgowheel.ru/?s=60001TB000&post_type=product&type_aws=true" alt="1" title="Крыло заднее"> 
+			<area shape="circle" target="_self" coords="490,282,8" href="http://partsgowheel.ru/?s=42201TB000&post_type=product&type_aws=true" alt="2" title="Башмак ножного тормоза"> 
+			<area shape="circle" target="_self" coords="490,294,8" href="http://partsgowheel.ru/?s=42202TB000&post_type=product&type_aws=true" alt="3" title="Пружина башмака ножного тормоза"> 
+			<area shape="circle" target="_self" coords="490,306,8" href="http://partsgowheel.ru/?s=52102TB000&post_type=product&type_aws=true" alt="4" title="Вилка колеса задняя"> 
+			<area shape="circle" target="_self" coords="277,356,8" href="http://partsgowheel.ru/?s=ISO7380X6X16&post_type=product&type_aws=true" alt="5" title="Винт"> 
+			<area shape="circle" target="_self" coords="277,368,8" href="http://partsgowheel.ru/?s=52104TB000&post_type=product&type_aws=true" alt="6" title="Втулка ограничительная"> 
+			<area shape="circle" target="_self" coords="277,379,8" href="http://partsgowheel.ru/?s=DIN912X6X16&post_type=product&type_aws=true" alt="7" title="Винт"> 
+			<area shape="circle" target="_self" coords="329,492,8" href="http://partsgowheel.ru/?s=52105TB000&post_type=product&type_aws=true" alt="8" title="Серьга фиксирующая"> 
+			<area shape="circle" target="_self" coords="329,504,8" href="http://partsgowheel.ru/?s=52106TB000&post_type=product&type_aws=true" alt="9" title="Втулка опорная"> 
+			<area shape="circle" target="_self" coords="332,516,8" href="http://partsgowheel.ru/?s=52107TB000&post_type=product&type_aws=true" alt="10" title="Штанга резьбовая"> 
+			<area shape="circle" target="_self" coords="332,527,8" href="http://partsgowheel.ru/?s=52108TB000&post_type=product&type_aws=true" alt="11" title="Шайба штанги"> 
+			<area shape="circle" target="_self" coords="329,539,8" href="http://partsgowheel.ru/?s=51210TB000&post_type=product&type_aws=true" alt="12" title="Винт-втулка с внутренней резьбой M6x39"> 
+			<area shape="circle" target="_self" coords="329,551,8" href="http://partsgowheel.ru/?s=52109TB000&post_type=product&type_aws=true" alt="13" title="Вал соединительный вилки заднего колеса"> 
+			<area shape="circle" target="_self" coords="150,434,8" href="http://partsgowheel.ru/?s=DIN912X8X30&post_type=product&type_aws=true" alt="14" title="Винт"> 
+			<area shape="circle" target="_self" coords="150,446,8" href="http://partsgowheel.ru/?s=52110TB000&post_type=product&type_aws=true" alt="15" title="Опора амортизатора заднего"> 
+			<area shape="circle" target="_self" coords="150,458,8" href="http://partsgowheel.ru/?s=52111TB000&post_type=product&type_aws=true" alt="16" title="Шайба амортизатора опорная"> 
+			<area shape="circle" target="_self" coords="183,541,8" href="http://partsgowheel.ru/?s=52112TB000&post_type=product&type_aws=true" alt="17" title="Пружина амортизатора заднего"> 
+			<area shape="circle" target="_self" coords="183,553,8" href="http://partsgowheel.ru/?s=52113TB000&post_type=product&type_aws=true" alt="18" title="Шайба амортизатора заднего верхняя"> 
+			<area shape="circle" target="_self" coords="183,565,8" href="http://partsgowheel.ru/?s=52114TB000&post_type=product&type_aws=true" alt="19" title="Гайка амортизатора декоративная"> 
+			
+			</map>
+		</div>
+		<div class="scheme etwow_bgt sec11" style="display:none">
+			<img class="map" src="cats/img/etwow_bgt_rw.jpg" usemap="#etwow_bgt_rw" name="show"> 
+			<map name="etwow_bgt_rw"> 
+			<area shape="circle" target="_self" coords="347,430,11" href="http://partsgowheel.ru/?s=53001TB000&post_type=product&type_aws=true" alt="1" title="Диск колесный"> 
+			<area shape="circle" target="_self" coords="347,451,11" href="http://partsgowheel.ru/?s=53002TB000&post_type=product&type_aws=true" alt="2" title="Шина колеса"> 
+			<area shape="circle" target="_self" coords="246,388,11" href="http://partsgowheel.ru/?s=53003TB000&post_type=product&type_aws=true" alt="3" title="Вал колеса"> 
+			<area shape="circle" target="_self" coords="246,408,11" href="http://partsgowheel.ru/?s=53004TB000&post_type=product&type_aws=true" alt="4" title="Подшипник вала колеса"> 
+			<area shape="circle" target="_self" coords="246,430,11" href="http://partsgowheel.ru/?s=WGX6&post_type=product&type_aws=true" alt="5" title="Шайба-гровер"> 
+			<area shape="circle" target="_self" coords="246,451,11" href="http://partsgowheel.ru/?s=DIN912X6X16&post_type=product&type_aws=true" alt="6" title="Винт"> 
+			
+			</map>
+		</div>
+		<!-- etwow_bgt end -->
+		
+		<!-- xi_m365 begin -->
+		<div class="item xi_m365" style="display:none">
+			<img class="map" src="cats/img/xi_m365.jpg" usemap="#xi_m365" name="show"> 
+			<map name="xi_m365"> 
+			<area shape="circle" target="_self" coords="0,0,11" href="#">
+			</map>
+		</div>
+		<!-- xi_m365 end -->
+		
+		<div class="item bg" style="display:block">
+			<img src="cats/img/bg_es.jpg">
+		</div>
+		
+		
+	</div> <!-- БЛОК №2 КОНЕЦ -->
+	
+	<!-- БЛОК №3 -->
+	<div class="block_3">
+		<div class="hint" style="display:none"><br>Выберите необходимый узел<br>и затем необходимую запчасть<br>на появившейся схеме</div>
+		
+		<!-- etwow_bgt begin -->
+		<div class="node etwow_bgt" style="display:none">
+			<div class="cell_left" onClick="select_schema(this)" type="sec00">00. Общая схема</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec01">01. Консоль управления</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec02">02. Складной руль</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec03">03. Рулевая колонка</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec04">04. Рулевой механизм</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec05">05. Вилка переднего колеса</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec06">06. Мотор-колесо переднее</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec07">07. Электронный блок управления</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec08">08. Механизм складывания шасси</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec09">09. Шасси (рама)</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec10">10. Подвеска и тормоз заднего колеса</div>		
+		</div>
+		<!-- etwow_bgt end -->
+		
+		<!-- xi_m365 begin -->
+		<div class="node xi_m365" style="display:none">
+			<div class="cell_left" onClick="select_schema(this)" type="sec00">00. Общая схема Mi</div>
+			<div class="cell_left" onClick="select_schema(this)" type="sec01">01. Консоль управления Mi</div>
+		</div>
+		<!-- xi_m365 end -->
+		
+	</div>
+</div> 
+</body> 
+</html>
+
+
+<!-- http://partsgowheel.ru/?s=ETCOE1509&post_type=product&type_aws=true  -->
+<!-- <area shape="circle" target="_self" coords=",11" href="http://partsgowheel.ru/?s=0000000000&post_type=product&type_aws=true" alt="" title=""> -->
